@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Profo",
+    "description": "Programmers challenge info",
+    "version": "1.1.0",
+    "author": "pound",
+    "action": {
+        "default_icon": "assets/thumbnail.png",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "assets/thumbnail.png",
+        "32": "assets/thumbnail.png",
+        "64": "assets/thumbnail.png"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "nativeMessaging"
+    ],
+    "host_permissions": [
+        "https://school.programmers.co.kr/learn/courses/30/lessons/"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["./data/programmers.json"],
+            "matches": ["https://school.programmers.co.kr/learn/courses/30/lessons/*"],
+            "extension_ids": []
+        }
+    ]
+}
